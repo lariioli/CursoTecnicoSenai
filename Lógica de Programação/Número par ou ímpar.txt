@@ -1,0 +1,27 @@
+using System;
+
+public class Program
+{
+public static void Main()
+{
+
+
+Console.Write("Informe um número: ");
+if( int.TryParse(Console.ReadLine(), out int n))
+    {
+
+       if (n % 2 == 0)
+{
+  Console.WriteLine($"O número {n} é par");
+   }
+  else
+  {
+ Console.WriteLine($"O número {n} é ímpar");
+  }
+}
+else
+{
+Console.WriteLine("Por favor, insira um número inteiro válido");
+}
+}
+}

@@ -1,0 +1,59 @@
+using System;
+
+public class Program
+{
+public static void Main()
+{
+double resultado = 0;
+
+Console.Write("Digite o primeiro valor: ");
+
+if (double.TryParse(Console.ReadLine(), out double valor1 ))
+{
+Console.Write("Digite o segundo valor: ");
+
+if (double.TryParse(Console.ReadLine(), out double valor2 ))
+{
+Console.Write("Digite o operador: ");
+string operador = Console.ReadLine();
+bool operacaoValida = true;
+switch (operador)
+    {
+case "+":
+resultado = valor1 + valor2;
+break;
+case "-":
+resultado = valor1 - valor2;
+break;
+case "*":
+resultado = valor1 * valor2;
+break;
+case "/":
+if ( valor2 != 0 )
+resultado = valor1 / valor2;
+else
+operacaoValida = false;
+break;
+default:
+operacaoValida = false;
+break;
+
+}
+if (operacaoValida)
+ Console.Write("O resultado é: " + resultado);
+else
+Console.Write("Operação inválida ou divisão por zero.");
+   }
+   else
+       {
+Console.WriteLine("Número inválido ");
+   }
+}
+else
+{
+    Console.WriteLine("Número inválido ");
+        }
+
+
+}
+}

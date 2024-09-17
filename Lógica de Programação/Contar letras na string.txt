@@ -1,0 +1,26 @@
+using System;
+
+public class Program
+{
+public static void Main()
+{
+Console.Write("Digite uma string: ");
+string texto = Console.ReadLine();
+Console.Write("Digite a letra que deseja contar: ");
+char letra = Console.ReadLine()[0];
+
+int contador = 0;
+
+foreach (char c in texto)
+{
+if (c == letra)
+{
+contador++;
+}
+}
+
+Console.Write("A letra " + letra + " aparece " + contador + " vez(es) na string. ");
+
+
+}
+}

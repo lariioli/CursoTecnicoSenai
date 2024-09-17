@@ -1,0 +1,36 @@
+using System;
+
+public class Program
+{
+public static void Main()
+{
+double cm = 100,
+      km = 1000,
+      mi = 1609.34708789,
+      conversao = 0;
+ 
+Console.Write("Digite a distância em Metros: ");
+if(double.TryParse(Console.ReadLine(), out double valoremmetros))
+{
+Console.Write("Escolha a unidade de conversão desejada: ");
+string unidadedeconversao = Console.ReadLine();
+switch(unidadedeconversao)
+{
+case "cm":
+conversao = valoremmetros * cm;
+break;
+case "km":
+conversao = valoremmetros / km;
+break;
+case "mi":
+conversao = valoremmetros / mi;
+break;
+}
+  Console.Write("A medida em Metros convertida para a unidade de medida escolhida é: " + conversao);
+       }
+ else
+  {
+Console.Write("Insira um número válido.");
+  }
+  }
+}

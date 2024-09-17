@@ -1,0 +1,29 @@
+using System;
+
+public class Program
+{
+    public static void Main()
+    {
+        Console.Write("Digite uma letra: ");
+        string letra = Console.ReadLine();
+
+        char[] vogais = { 'a', 'e', 'i', 'o', 'u' };
+foreach(char v in vogais)
+{
+  if( v == letra[0])
+  {
+ 
+  Console.WriteLine("A letra " + letra + " é uma vogal");
+  break;
+  }  
+  else
+  {
+            Console.WriteLine("A letra " + letra + " é uma consoante");
+  break;
+  }
+}
+
+
+
+    }
+}

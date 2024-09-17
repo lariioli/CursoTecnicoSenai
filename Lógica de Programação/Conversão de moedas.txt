@@ -1,0 +1,36 @@
+using System;
+
+public class Program
+{
+public static void Main()
+{
+double dolar = 5.47,
+  euro = 6.09,
+      conversao = 0,
+      libra = 7.13;
+Console.Write("Insira o valor em real:");
+if(double.TryParse(Console.ReadLine(), out double valoremreal))
+{
+Console.Write("Digite a moeda de conversão desejada: ");
+   string moedadeconversao = Console.ReadLine();
+switch (moedadeconversao)
+{
+case "dolar":
+conversao = valoremreal * dolar;
+break;
+case "euro":
+conversao = valoremreal * euro;
+break;
+case "libra":
+conversao = valoremreal * libra;
+break;
+}
+Console.Write("A conversão do real para essa moeda é: " + conversao);
+}
+else
+{
+Console.WriteLine("Número inválido");
+}
+
+}
+}

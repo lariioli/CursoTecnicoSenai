@@ -1,0 +1,30 @@
+using System;
+
+public class Program
+{
+    public static void Main()
+    {
+        Console.Write("Digite um texto: ");
+        string texto = Console.ReadLine();
+
+       
+        char[] vogais = { 'a', 'e', 'i', 'o', 'u' };
+        int contador = 0;
+
+
+        foreach (char c in texto)
+        {
+            foreach(char v in vogais)
+   {
+     if( v == c )
+     {
+
+  contador++;
+  break;
+     }  
+            }
+        }
+
+        Console.WriteLine("O texto possui " + contador + " vogais");
+    }
+}
