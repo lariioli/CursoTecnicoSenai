@@ -1,5 +1,7 @@
 # Curso Técnico Senai
 
+O .NET Fiddle é uma plataforma online para testar e compartilhar código em C#, VB.NET e F#. Embora seja amplamente utilizado para testar pequenos trechos de código, também é possível criar jogos simples. Usando bibliotecas como System.Drawing ou frameworks como MonoGame, desenvolvedores podem prototipar jogos básicos. No entanto, devido às limitações da plataforma (sem renderização avançada ou suporte completo a bibliotecas gráficas), esses jogos tendem a ser bem simples, voltados para lógica de jogo e mecânicas básicas, como jogos de texto ou gráficos 2D rudimentares.
+
 ### Para inicializar o GIT em um novo repositório:
 git init
 
